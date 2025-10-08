@@ -1,11 +1,11 @@
-import dynamic from "next/dynamic";
+"use client";
+
 import type { Metadata } from "next";
+import BrazilEVisaApp from "./BrazilEVisaApp";
 
 export const metadata: Metadata = {
   title: "Brazil eVisa – Premium Application",
 };
-
-const BrazilEVisaApp = dynamic(() => import("./BrazilEVisaApp"), { ssr: false });
 
 export default function Page() {
   return <BrazilEVisaApp />;
